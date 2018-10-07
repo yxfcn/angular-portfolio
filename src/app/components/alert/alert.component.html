@@ -1,5 +1,14 @@
+<!--
 <div class="container mt-2">
   <div class="alert alert-warning" role="alert">
     The data was refreshed at {{date | date:'medium'}}
   </div>
 </div>
+-->
+<clr-alert [clrAlertType]="service.type" [clrAlertAppLevel]="true" *ngIf="service.show" (clrAlertClosedChange)="service.close()">
+  <div clr-alert-item class="alert-item">
+      <div class="alert-text">
+          {{service.message}}
+      </div>
+  </div>
+</clr-alert>

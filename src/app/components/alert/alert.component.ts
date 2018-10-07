@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./alert.component.css']
 })
 export class AlertComponent implements OnInit {
-  @Input() date: Date;
+  // @Input() date: Date;
   constructor() { }
 
   ngOnInit() {
